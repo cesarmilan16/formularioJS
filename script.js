@@ -10,7 +10,7 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
 
     // Expresiones regulares
     const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,50}$/;
-    const edadRegex = /^(?:[1-9]|[1-9][0-9]|120)$/;
+    const edadRegex = /^(?:[1-9]|[1-9][0-9]|110)$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Limpiar mensajes de error previos
@@ -40,7 +40,7 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     // Validar edad
     if (edad && !edadRegex.test(edad)) {
         isValid = false;
-        document.getElementById('errorEdad').textContent = 'La edad debe ser un número entre 1 y 120.';
+        document.getElementById('errorEdad').textContent = 'La edad debe ser un número entre 1 y 110.';
     }
 
     // Validar email
