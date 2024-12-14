@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario Interactivo</h1>
+        <form id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="highlight">
+            <span id="errorNombre" class="error"></span><br>
+        
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" class="highlight">
+            <span id="errorEdad" class="error"></span><br>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="highlight">
+            <span id="errorEmail" class="error"></span><br>
+        
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" class="highlight"></textarea>
+            <span id="errorComentarios" class="error"></span><br>
+        
+            <input type="submit" value="Enviar">
+        </form>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
