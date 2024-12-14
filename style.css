@@ -91,11 +91,13 @@ input[type="submit"] {
 
 /* Como el hover no funciona en dispositivos tactiles, usamos active */
 input[type="submit"]:active {
+    background-color: #ff8800; /* Cambia de color al pulsarlo */
     transform: scale(1.1); /* Escala ligeramente el botón al pulsarlo */
 }
 
 @media (min-width: 768px) {
     input[type="submit"]:hover {
+        background-color: #ff8800; /* Cambia de color al pulsarlo */
         transform: scale(1.1); /* Escala ligeramente el botón al pasar el mouse */
     }
 }
