@@ -81,13 +81,17 @@ input[type="submit"] {
     width: 40%;
     padding: 1rem 0;
     font-weight: 700;
+    background-color: #ff5100;
+    text-transform: uppercase;
+    border-radius: 5px;
     cursor: pointer; /* Cambia el cursor al estilo de clic */
     transition: transform 0.3s ease; /* Transición suave al escalar */
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; /* Elimina el resaltado en dispositivos táctiles */
 }
 
+/* Como el hover no funciona en dispositivos tactiles, usamos active */
 input[type="submit"]:active {
-    transform: scale(1.1); /* Escala ligeramente el botón al pasar el mouse */
+    transform: scale(1.1); /* Escala ligeramente el botón al pulsarlo */
 }
 
 @media (min-width: 768px) {
